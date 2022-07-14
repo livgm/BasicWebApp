@@ -14,7 +14,7 @@ public class QueryProcessor {
         } else if (query.contains("name")) {
            return "Liv";
         } else if (query.contains("what is")){ // TODO extend the programm here
-            return "" + (Integer.parseInt(query.split(" ")[2]) + Integer.parseInt(query.split(" ")[4])) ;
+            return "" + (Integer.parseInt(query.split(" ")[3]) + Integer.parseInt(query.split(" ")[5])) ;
         }else{
             return "";
         }
