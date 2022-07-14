@@ -18,7 +18,7 @@ public class QueryProcessor {
         }else if(query.contains("largest")){
             String[] a = query.split(":")[2].split(",");
             int max = 0;
-            for (int i = 0; i < a.length(); i++) {
+            for (int i = 0; i < a.length; i++) {
                 int b = Integer.parseInt(a[i]);
                 if( b >= max) {
                     max = b;
