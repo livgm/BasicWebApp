@@ -13,8 +13,8 @@ public class QueryProcessor {
                     "writer in the English language and the world's pre-eminent dramatist.";
         } else if (query.contains("name")) {
            return "Liv";
-        } else { // TODO extend the programm here
-            return "";
+        } else if (query.contains("what is")){ // TODO extend the programm here
+            return Integer.parseInt(query.split(" ")[2]) + Integer.parseInt(query.split(" ")[4]) ;
         }
     }
 }
