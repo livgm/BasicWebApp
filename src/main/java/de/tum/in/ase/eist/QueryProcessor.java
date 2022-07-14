@@ -17,6 +17,7 @@ public class QueryProcessor {
             return "" + (Integer.parseInt(query.split(" ")[3]) + Integer.parseInt(query.split(" ")[5]));
         }else if(query.contains("largest")){
             String[] a = query.split(":")[2].split(",");
+            System.out.println(a[0]);
             int max = 0;
             for (int i = 0; i < a.length; i++) {
                 int b = Integer.parseInt(a[i]);
@@ -25,7 +26,9 @@ public class QueryProcessor {
                 }
             }
             return "" + max;
-        }else{
+        }else if(query.contains("May")){
+            return "2016";
+        } else{
             return "";
         }
     }
